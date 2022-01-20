@@ -5,7 +5,7 @@ import morning from "../../assets/morning.jpg";
 import afternoon from "../../assets/afternoon.jpg";
 import evening from "../../assets/evening.jpg";
 import night from "../../assets/night.jpg";
-import mistLogo from "../../assets/mist_logo.jpg";
+import atmosphere from "../../assets/atmosphere.jpg";
 import axios, { AxiosResponse } from 'axios';
 
 
@@ -160,10 +160,10 @@ function Display(props: any) {
                         <div className="d-flex flex-xs-column flex-row  justify-content-center flex-wrap">
                             <div className='box' id="box1">
                                 <div className="property-logo">
-                                    <img src={mistLogo} alt="mist" />
+                                    <img src={atmosphere} alt="mist" />
                                 </div>
                                 <div className="property-value">
-                                    <p>Mist</p>
+                                    <p>Atmosphere</p>
                                     <p>{weather?.SkyCondition}</p>
                                 </div>
                             </div>

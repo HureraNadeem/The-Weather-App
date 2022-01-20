@@ -1,0 +1,11 @@
+.header {
+    margin-top: 35px;
+}
+.header > .logo-div > img {
+    width: 70px;
+    height: 70px;
+}
+.heading-div > h1 {
+    color: aliceblue;
+    text-shadow: 2px 2px grey
+}

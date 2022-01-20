@@ -1,0 +1,120 @@
+.scroll-down {
+  animation: myAnim 3s ease 0s infinite normal backwards;
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70% {
+    transform: translateY(-8px);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: translateY(8px);
+  }
+
+  80% {
+    transform: translateY(6.4px);
+  }
+
+  90% {
+    transform: translateY(-6.4px);
+  }
+}
+
+.scroll-down-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) and (max-width : 2000px) {
+  .scroll-down-div {
+    display: none !important;
+  }
+
+}
+
+/* * {
+  color: aliceblue;
+} */
+
+.time-outer-div {
+  background-color: blue;
+  height: 340px;
+  /* width: 100%; */
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background-color: black !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#greeting_statement {
+  font-size: 40px;
+  text-shadow: 2px 2px black;
+  color: aliceblue;
+}
+.date-time-div {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-div,
+.time-div {
+  text-align: right;
+}
+.time-date-text {
+  font-size: 25px;
+  text-shadow: 2px 2px black;
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 480px) {
+  .date-div,
+  .time-div,
+  #greeting_statement {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+/* //////////////////////////////////////////////// */
+/* Weather display */
+.box {
+  margin: 10px 60px;
+  width: 180px;
+  height: 180px;
+  background-color: #212529;
+  border-radius: 3%;
+}
+
+.box > .property-logo {
+  height: 100px;
+  display: grid;
+  place-items: center;
+}
+.box > .property-logo > i {
+  color: aliceblue;
+}
+
+.box > .property-value > p {
+  text-align: center;
+  /* margin-bottom: 20px; */
+  font-size: 17px;
+  color: aliceblue;
+}

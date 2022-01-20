@@ -1,0 +1,27 @@
+.outer-div {
+    margin: 40px 25px;
+}
+#floatingInput {
+    max-width: 320px;
+    height: 70px;
+}
+@media only screen and (max-width: 375px) {
+  .search_button {
+    margin-top: 15px;
+  }
+  
+}
+
+.form-floating > label {
+  color: white !important;
+}
+.form-floating > input {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+.form-floating > input:focus {
+  background-color: black;
+  color: white;
+}
+

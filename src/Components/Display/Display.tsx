@@ -190,7 +190,7 @@ function Display(props: any) {
                                     <i style={{ fontSize: "55px" }} className="fas fa-thermometer-empty"></i>
                                 </div>
                                 <div className="property-value">
-                                    <p>Temerature</p>
+                                    <p>Temperature</p>
                                     <p>{weather?.temperature}°C / {weather?.temperature !== undefined ? ((weather?.temperature * 1.8) + 32).toFixed(2) : ""}°F</p>
                                 </div>
                             </div>

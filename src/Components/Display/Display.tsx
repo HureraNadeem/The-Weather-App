@@ -95,8 +95,7 @@ function Display(props: any) {
             setGreeting("night");
             setImgUrl(night);
         }
-    }, [])
-
+    }, [hourNumber])
 
     return (
         <>
